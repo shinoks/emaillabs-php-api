@@ -27,7 +27,7 @@ $adresses = array(
 
 //Init SendmailTemplates action
 //This action will send e-mail
-$mail = new \EmailLabs\Actions\SendmailTemplates();
+$mail = new \Shinoks\Actions\SendmailTemplates();
 
 //Set required data
 $mail->setData( 'from', 'sender@example.com' );
@@ -63,6 +63,6 @@ $mail->setData( 'text', 'Text message body {{ test }}' );
 var_dump( $mail->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

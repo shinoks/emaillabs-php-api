@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init AddTemplate action
 //This action allows you to add email template
-$addTemplate = new \EmailLabs\Actions\AddTemplate();
+$addTemplate = new \Shinoks\Actions\AddTemplate();
 
 //Set html-template value
 //Between {{ and }} you can add varieble name that could be
@@ -24,6 +24,6 @@ $addTemplate->setData( 'txt', '{{ firstName }}' );
 var_dump( $addTemplate->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-namespace EmailLabs\Actions;
+namespace Shinoks\Actions;
 
-use \EmailLabs\Tools\EmailLabsRequestLayer;
-use \EmailLabs\Tools\EmailLabsErrorHandler;
+use \Shinoks\Tools\EmailLabsRequestLayer;
+use \Shinoks\Tools\EmailLabsErrorHandler;
 
 class IsEmailTmp extends EmailLabsRequestLayer
 {

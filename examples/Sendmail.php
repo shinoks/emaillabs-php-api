@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init Sendmail action
 //This action will send e-mail
-$mail = new \EmailLabs\Actions\Sendmail();
+$mail = new \Shinoks\Actions\Sendmail();
 
 $mail->setAppKey( "APP_KEY" );
 
@@ -58,6 +58,6 @@ $mail->setData( 'text', 'Text message body' );
 var_dump( $mail->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init ClickTracking action
 //This action will get all clicks ( max from last 3 days )
-$click = new \EmailLabs\Actions\ClickTracking();
+$click = new \Shinoks\Actions\ClickTracking();
 
 //Add params to filter response ( Not Required )
 //Way of sorting data
@@ -29,6 +29,6 @@ $click->setParam( 'offset', 30 );
 var_dump( $click->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

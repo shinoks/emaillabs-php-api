@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init Emails action
 //This action will get list of all emails send by SMTP
-$mails = new \EmailLabs\Actions\Emails();
+$mails = new \Shinoks\Actions\Emails();
 
 //Add params to filter response ( Not Required )
 //Way of sorting data
@@ -33,6 +33,6 @@ $mails->setParam( 'offset', 40 );
 var_dump( $mails->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

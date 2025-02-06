@@ -14,10 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-namespace EmailLabs\Tools;
+namespace Shinoks\Tools;
 
-use \EmailLabs\EmailLabsConfig;
-use \EmailLabs\Tools\EmailLabsFilter;
+use \Shinoks\EmailLabsConfig;
+use \Shinoks\Tools\EmailLabsFilter;
 
 class EmailLabsCurl extends EmailLabsConfig{
 

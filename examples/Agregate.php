@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init Agregate action
 //This action will get aggregated data about sent messages
-$agregate = new \EmailLabs\Actions\Agregate();
+$agregate = new \Shinoks\Actions\Agregate();
 
 //Required params
 $agregate->setParam( 'smtp_account', '1.name_of_smtp_server.smtp' );
@@ -21,6 +21,6 @@ $agregate->setParam( 'date_to', strtotime( '2016-01-14' ) );
 var_dump( $agregate->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

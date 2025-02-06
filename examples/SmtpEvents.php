@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init SmtpEvents action
 //This action will get send emails by event: ok, injected, hardbounce, spambounce
-$events = new \EmailLabs\Actions\SmtpEvents();
+$events = new \Shinoks\Actions\SmtpEvents();
 
 //Set required data
 $events->setParam( 'from_time', strtotime( '2016-01-01' ) );
@@ -35,6 +35,6 @@ $events->setParam( 'offset', 40 );
 var_dump( $events->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

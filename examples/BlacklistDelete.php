@@ -8,13 +8,13 @@ require_once( '../autoload.php' );
 
 //Init BlacklistDelete action
 //This action will delete address from blacklist
-$blacklist = new \EmailLabs\Actions\BlacklistDelete();
+$blacklist = new \Shinoks\Actions\BlacklistDelete();
 $blacklist->setEmail( 'test_email@example.com' );
 
 //Send request and get response from server
 var_dump( $blacklist->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

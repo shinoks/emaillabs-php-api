@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-namespace EmailLabs\Actions;
+namespace Shinoks\Actions;
 
-use \EmailLabs\Tools\EmailLabsRequestLayer;
+use \Shinoks\Tools\EmailLabsRequestLayer;
 
 
 class SmtpEvents extends EmailLabsRequestLayer

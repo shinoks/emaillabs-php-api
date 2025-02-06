@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-namespace EmailLabs\Tools;
+namespace Shinoks\Tools;
 
-use \EmailLabs\EmailLabsInit;
-use EmailLabs\Tools\EmailLabsCurl;
-use \EmailLabs\Tools\EmailLabsActionInterface;
-use \EmailLabs\Tools\EmailLabsErrorHandler;
+use \Shinoks\EmailLabsInit;
+use Shinoks\Tools\EmailLabsCurl;
+use \Shinoks\Tools\EmailLabsActionInterface;
+use \Shinoks\Tools\EmailLabsErrorHandler;
 
 class EmailLabsRequestLayer implements EmailLabsActionInterface{
 

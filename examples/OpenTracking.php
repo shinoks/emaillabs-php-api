@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init OpenTracking action
 //This action will get list opened emails ( max from last 3 days )
-$opens = new \EmailLabs\Actions\OpenTracking();
+$opens = new \Shinoks\Actions\OpenTracking();
 
 //Add params to filter response ( Not Required )
 //Way of sorting data
@@ -30,6 +30,6 @@ $opens->setParam( 'offset', 40 );
 var_dump( $opens->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init Blacklist action
 //This action will get addresses that are blacklisted
-$blacklist = new \EmailLabs\Actions\Blacklist();
+$blacklist = new \Shinoks\Actions\Blacklist();
 
 //Add params to filter response ( Not Required )
 //Way of sorting data
@@ -34,6 +34,6 @@ $blacklist->setParam( 'offset', 30 );
 var_dump( $blacklist->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

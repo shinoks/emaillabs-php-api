@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init BlacklistAdd action
 //This action will add address into blacklist
-$blacklist = new \EmailLabs\Actions\BlacklistAdd();
+$blacklist = new \Shinoks\Actions\BlacklistAdd();
 
 //Add data required to add address into blacklist ( Basic )
 $blacklist->setData( 'account', '1.mkujawski.smtp' );
@@ -24,6 +24,6 @@ $blacklist->setData( 'source', 'CMS' );
 var_dump( $blacklist->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }

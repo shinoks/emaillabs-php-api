@@ -8,7 +8,7 @@ require_once( '../autoload.php' );
 
 //Init IsEmailTmp action
 //This action will check if email address is templorary like yopmail.com
-$tmpMail = new \EmailLabs\Actions\IsEmailTmp();
+$tmpMail = new \Shinoks\Actions\IsEmailTmp();
 
 //Add email address to check
 $tmpMail->setEmail( 'teat_address@example.com' );
@@ -17,6 +17,6 @@ $tmpMail->setEmail( 'teat_address@example.com' );
 var_dump( $tmpMail->getResult() );
 
 //Get errors if exists
-if( count( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
-    var_dump( \EmailLabs\Tools\EmailLabsErrorHandler::getErrors() );
+if( count( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() ) > 0 ){
+    var_dump( \Shinoks\Tools\EmailLabsErrorHandler::getErrors() );
 }
