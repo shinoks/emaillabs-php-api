@@ -42,6 +42,11 @@ class Sendmail extends EmailLabsRequestLayer
     protected $requireData = array( 'to', 'smtp_account', 'subject', 'from' );
 
     /**
+     * @var string can set directory separator of attachments
+     */
+    private $separator = '/';
+
+    /**
      * This method is setting up new tag
      *
      * @param $tag Tag to add
@@ -92,4 +97,12 @@ class Sendmail extends EmailLabsRequestLayer
         }
     }
 
+    public function setSeparator($separator){
+        $this->separator = $separator;
+    }
+
+    public function getSeparator()
+    {
+        return $this->separator;
+    }
 }
