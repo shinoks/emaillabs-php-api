@@ -6,7 +6,7 @@ To install this library simply add
 ```json
 {
   "require": {
-    "emaillabs/emaillabs-php-api"   : "dev-master"
+    "shinoks/emaillabs-php-api"   : "dev-master"
   }
 }
 ```
